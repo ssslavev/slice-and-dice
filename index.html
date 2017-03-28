@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Kreon|Open+Sans" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="./node_modules/navigo/lib/navigo.min.js"></script>
+    <script src="./node_modules/handlebars/dist/handlebars.js"></script>
+
+</head>
+
+<body>
+    <header id="header">
+        <h1 id="logo">
+            <a href="#/home"><img src="images/logo.png" alt="logo" width="213" height="55">
+                <div class="caption">My site new site</div>
+            </a>
+        </h1>
+
+
+
+        <form id="search">
+            <input type="text" value="Search this website">
+            <div class="register">
+                <a href="#/sign">Sign up/Sign in</a>
+
+            </div>
+        </form>
+
+        <div id="social-icons">
+
+            <a id="twitter" href="#"><span>Twitter</span></a>
+            <a id="rss" href="#"><span>RSS</span></a>
+            <a id="facebook" href="#"><span>Facebook</span></a>
+
+
+
+        </div>
+
+        <nav id="nav-container">
+            <ul id="navigation">
+                <li><a href="#/home" title="home">Home</a></li>
+                <li><a href="#/categories" title="categories">Categories</a></li>
+                <li><a href="#/users" title="users">Users</a></li>
+                <li><a href="#/post" title="post">Post</a></li>
+                <li><a href="#/contacts" title="contacts">Contacts</a></li>
+                <li><a href="#/about" title="about">About</a></li>
+
+            </ul>
+        </nav>
+
+
+
+    </header>
+
+    <div id="main"></div>
+
+
+    <div class="container footer">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="col-md-3">
+                    <ul class="unstyled">
+                        <li>GitHub
+                            <li>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Contact & support</a></li>
+                                <li><a href="#">Enterprise</a></li>
+                                <li><a href="#">Site status</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul class="unstyled">
+                        <li>Applications
+                            <li>
+                                <li><a href="#">Product for Mac</a></li>
+                                <li><a href="#">Product for Windows</a></li>
+                                <li><a href="#">Product for Eclipse</a></li>
+                                <li><a href="#">Product mobile apps</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul class="unstyled">
+                        <li>Services
+                            <li>
+                                <li><a href="#">Web analytics</a></li>
+                                <li><a href="#">Presentations</a></li>
+                                <li><a href="#">Code snippets</a></li>
+                                <li><a href="#">Job board</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul class="unstyled">
+                        <li>Documentation
+                            <li>
+                                <li><a href="#">Product Help</a></li>
+                                <li><a href="#">Developer API</a></li>
+                                <li><a href="#">Product Markdown</a></li>
+                                <li><a href="#">Product Pages</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-9">
+                <div class="col-md-4">
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Privacy</a>
+                    <a href="#">Security</a>
+                </div>
+                <div class="span4">
+                    <p class="muted pull-right">© 2013 Company Name. All rights reserved</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script>
+        document.location.href = "#/home";
+        $('.carousel').carousel({
+            interval: 4000
+        })
+
+        $('#media').carousel({
+            pause: true,
+            interval: 5200,
+        });
+    </script>
+
+
+    <script src="https://www.gstatic.com/firebasejs/3.7.3/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyDUOlUl6GU_SRVggi1ELPKYM16d8q8ZkCE",
+            authDomain: "forum-telerik.firebaseapp.com",
+            databaseURL: "https://forum-telerik.firebaseio.com",
+            storageBucket: "forum-telerik.appspot.com",
+            messagingSenderId: "718261149932"
+        };
+        firebase.initializeApp(config);
+    </script>
+
+
+    <script src="js/templates.js"></script>
+    <script src="js/app.js"></script>
+
+
+
+
+</body>
+
+</html>
